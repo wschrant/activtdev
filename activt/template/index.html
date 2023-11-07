@@ -10,6 +10,7 @@
     <title>ActiVT</title>
     <script src="https://kit.fontawesome.com/30b6a4d5d2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="https://unpkg.com/htmx.org@1.9.8" integrity="sha384-EAzY246d6BpbWR7sQ8+WEm40J8c3dHFsqC58IgPlh4kMbRRI6P6WA+LA/qGAyAu8" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="webpage" id="webpage">
@@ -18,7 +19,7 @@
                 <h1 class="headlogo"><a href="../activt/index.html">ActiVT</a></h1>
                 <ul>
                     <li><a href="#">Events</a></li>
-                    <li><a href="../activt/pages/about.html">About</a></li>
+                    <li><a href="#">About</a></li>
                     <li><a href="../activt/pages/profile.html">Profile</a></li>
                     <li class="headlogin" onclick="openlogin()">Login</li>
                 </ul>
@@ -37,7 +38,7 @@
                 <h1 class="sec1header2">Want an easy way to connect with fellow students?</h1>
                 <h1 class="sec1para">Then ActiVT is for you!</h1>
             </div>
-            <img class="sec1img" src="../activt/images/hokiebird.jpg" alt="hokiebird jumping">
+            <img class="sec1img" src="{% static 'images/hokiebird.jpg' %}" alt="hokiebird jumping">
         </div>
         <div class="infosec">
             <div class="info">
@@ -75,7 +76,7 @@
         <div class="footer">
             <div class="footcont">
                 <p class="vtquote">© 2023 Virginia Polytechnic Institute and State University. All rights reserved.</p>
-                <img class="recsports" src="../activt/images/recsports.jpg" alt="">
+                <img class="recsports" src="{% static 'images/recsports.jpg' %}" alt="">
                 <ul class="sociallogos">
                     <li>
                         <a href="https://x.com/vtrecsports" target="_blank">
