@@ -1,0 +1,124 @@
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActiVT</title>
+    <script src="https://kit.fontawesome.com/30b6a4d5d2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="webpage" id="webpage">
+        <div class="header">
+            <nav class="headertop">
+                <h1 class="headlogo"><a href="../activt/index.html">ActiVT</a></h1>
+                <ul>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="../activt/pages/about.html">About</a></li>
+                    <li><a href="../activt/pages/profile.html">Profile</a></li>
+                    <li class="headlogin" onclick="openlogin()">Login</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="browsesec">
+            <div class="browseboxes">
+                <a href="#"><div class="box">Top Posts</div></a>
+                <a href="#"><div class="box">New Posts</div></a>
+                <a href="#"><div class="box">Create a Post</div></a>
+            </div>
+        </div>
+        <div class="section1">
+            <div class="leftwords">
+                <h1 class="sec1header">Looking for activities on campus?</h1>
+                <h1 class="sec1header2">Want an easy way to connect with fellow students?</h1>
+                <h1 class="sec1para">Then ActiVT is for you!</h1>
+            </div>
+            <img class="sec1img" src="../activt/images/hokiebird.jpg" alt="hokiebird jumping">
+        </div>
+        <div class="infosec">
+            <div class="info">
+                <div class="leftside">
+                    <h1 class="lefthead">What is ActiVT about?</h1>
+                    <p class="leftcont">ActiVT is a student-oriented platform that allows Virginia Tech Students to setup on campus activities and find others to join their activities.</p>
+                </div>
+                <div class="rightside">
+                    <h1 class="righthead">How can I join?</h1>
+                    <p class="rightcont">If you are interested in finding activities, head over to the <a class ="logina" href="../activt/pages/login.html" target="_blank" rel="noopener noreferrer">login page</a> to setup an account. Check out the <a class="logina"href="#" target="_blank" rel="noopener noreferrer">how-to page</a> after to learn the basics.</p>
+                </div>  
+            </div>
+            
+        </div>
+        
+        <div class="section2">
+            <h1 class="sec2head">You may be interested in these activities:</h1>
+            <div class="interestposts">
+                <div class="ppost">
+                <a class="post1" href="#" target="_blank" rel="noopener noreferrer"><img class="ipost" src="../activt/images/placeholderpost.jpeg" alt="Post"></a> 
+                </div>
+                <div class="ppost">
+                    <a class="post1" href="#" target="_blank" rel="noopener noreferrer"><img class="ipost" src="../activt/images/placeholderpost.jpeg" alt="Post"></a> 
+                </div>
+                <div class="ppost">
+                    <a class="post1" href="#" target="_blank" rel="noopener noreferrer"><img class="ipost" src="../activt/images/placeholderpost.jpeg" alt="Post"></a> 
+                </div>
+                <div class="ppost">
+                    <a class="post1" href="#" target="_blank" rel="noopener noreferrer"><img class="ipost" src="../activt/images/placeholderpost.jpeg" alt="Post"></a> 
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="footer">
+            <div class="footcont">
+                <p class="vtquote">© 2023 Virginia Polytechnic Institute and State University. All rights reserved.</p>
+                <img class="recsports" src="../activt/images/recsports.jpg" alt="">
+                <ul class="sociallogos">
+                    <li>
+                        <a href="https://x.com/vtrecsports" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/vtrecsports" target="_blank">
+                        <i class="fa-brands fa-instagram"></i> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com/vtrecsports" target="_blank">
+                        <i class="fa-brands fa-square-facebook"></i> 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>  
+    </div>
+    <div class="overlay" id="overlay">
+        <div class="center" id="login-box">
+            <i class="fa-solid fa-circle-xmark" onclick="closelogin()"></i>
+            <div class="headerl">
+                <h1 class="activt">ActiVT</h1>
+                <h1>Login</h1>
+            </div>
+            <form class="postl" method="post">
+                <div class="txt_field">
+                    <input type="username" required>
+                    <label>Username</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <input type="submit" value="Login">
+                <div class="pass">Forgot Password?</div>
+                <div class="signup_link">
+                    <a href="#">Sign Up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
