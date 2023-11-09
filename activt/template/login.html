@@ -5,14 +5,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up - ActiVT</title>
-    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
 </head>
 <body>
     <div class="center" id="login-box">
         <div class="headerl">
             <h1 class="activt">ActiVT</h1>
-            <h1>Sign Up</h1>
+            <h1>Login</h1>
         </div>
 
 
@@ -22,37 +22,22 @@
             {% endfor %}
         </div>
 
-
-
-
         <form action = "" class="postl" method="POST">
             {% csrf_token %}
             <div class="txt_field">
-                <input type="email" name = "email" required>
-                <label>Email</label>
-            </div>
-            <div class="txt_field">
-                <input type="username" name = "username" required>
+                <input name="username" type="username" required>
                 <label>Username</label>
             </div>
             <div class="txt_field">
-                <input type="password" name = "password" required>
+                <input name="password" type="password" required>
                 <label>Password</label>
             </div>
-            <div class="txt_field">
-                <input type="password" name = "password2" required>
-                <label>Re-enter Password</label>
-            </div>
-            <input type="submit" value="Sign Up">
-            <div class="login_link">
-                <p>Already have an account? <a href="/login">Login</a></p>
+            <input type="submit" value="Login">
+            <div class="pass">Forgot Password?</div>
+            <div class="signup_link">
+                <a href="/signup">Sign Up</a>
             </div>
         </form>
-
-
-
-
-
     </div>
 </body>
 </html>
